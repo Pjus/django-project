@@ -128,12 +128,23 @@ for code in codes[1:3]:
         away_stat.append(i.text)
 
     homeShotOnTarget = driver.find_elements_by_xpath('//*[@id="mainContent"]/div/section/div[2]/div[2]/div[2]/section[3]/div[2]/div[2]/table/tbody/tr[2]/td[1]')
-    for shot in homeShotOnTarget:
-        home_stat.append(shot)
+    for shoth in homeShotOnTarget:
+        home_stat.append(shoth)
 
+    awayShotOnTarget = driver.find_elements_by_xpath('//*[@id="mainContent"]/div/section/div[2]/div[2]/div[2]/section[3]/div[2]/div[2]/table/tbody/tr[2]/td[3]')
+    for shota in awayShotOnTarget:
+        away_stat.append(shota)
 
+Shots	7
+Touches	771
+Passes	606
+Tackles	3
+Clearances	18
+Corners	9
+Offsides	1
+Yellow cards	4
+	Fouls conceded	19
 
-    
 
 #     match = [HOME, AWAY]
 #     all_matches.append(match)
