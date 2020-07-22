@@ -109,14 +109,31 @@ for code in codes[1:3]:
 
     # HOME = [match_date, referee, home_club, home_formation, home_Goalkeeper, home_Defenders, home_Midfielders, home_Forward, home_Substitutes]
     # AWAY = [match_date, referee, away_club, away_formation, away_Goalkeeper, away_Defenders, away_Midfielders, away_Forward, away_Substitutes]
-
+    time.sleep(1)
     stat_tab = driver.find_element_by_xpath('//*[@id="mainContent"]/div/section/div[2]/div[2]/div[1]/div/div/ul/li[3]')
     stat_tab.click()
 
-    stats = driver.find_elements_by_xpath('//*[@id="mainContent"]/div/section/div[2]/div[2]/div[2]/section[3]/div[2]/div[2]/table/tbody')
+    home_stat = []
+    away_stat = []
+
+
+    time.sleep(1)
     
-    for stat in stats:
-        print(stat.text)
+    homePossession = driver.find_elements_by_xpath('//*[@id="mainContent"]/div/section/div[2]/div[2]/div[2]/section[3]/div[2]/div[2]/table/tbody/tr[1]/td[1]')
+    for i in homePossession:
+        home_stat.append(i.text)
+
+    awayPossession = driver.find_elements_by_xpath('//*[@id="mainContent"]/div/section/div[2]/div[2]/div[2]/section[3]/div[2]/div[2]/table/tbody/tr[1]/td[3]')
+    for j in awayPossession:
+        away_stat.append(i.text)
+
+    homeShotOnTarget = driver.find_elements_by_xpath('//*[@id="mainContent"]/div/section/div[2]/div[2]/div[2]/section[3]/div[2]/div[2]/table/tbody/tr[2]/td[1]')
+    for shot in homeShotOnTarget:
+        home_stat.append(shot)
+
+
+
+    
 
 #     match = [HOME, AWAY]
 #     all_matches.append(match)
