@@ -44,7 +44,6 @@ match_results = driver.find_elements_by_class_name('fixtures__matches-list')
 
 
 
-client = MongoClient()
 client = MongoClient('localhost', 27017)
 
 db = client.EPL
