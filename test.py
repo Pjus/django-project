@@ -225,13 +225,11 @@ for code in codes[1:3]:
     AWAY.append(away_stat)
 
 
-
-
     match = [HOME, AWAY]
     all_matches.append(match)
 
-# for i in all_matches:
-#     print(i)
+for i in all_matches:
+    print(i)
 
 
     
