@@ -1,5 +1,5 @@
 {% load static %}
-
+<!-- 
 <!DOCTYPE html>
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,10 +43,10 @@
         </div>
 
     </body>
-</html> 
+</html>  -->
 
 
-<!-- 
+
 <html>
     <head>
         <title>Link</title>
@@ -63,7 +63,7 @@
             <table border="3z">
                 <tr> <th>Home</th> <th>Away</th> <th>Competition</th> <th>Statium</th> <th>Match ID</th> </tr>
                 {% for row in rows.0 %}
-                <tr> <td>{{row.home}}</td> <td>{{row.away}}</td> <td>{{row.competition}}</td> <td>{{row.stadium}}</td> <td><a href="https://www.premierleague.com/match/{{row.match_id}}">{{row.match_id}}</a></td> </tr>
+                <tr> <td>{{row.date}}</td> <td>{{row.home}}</td> <td>{{row.away}}</td> <td>{{row.competition}}</td> <td>{{row.stadium}}</td> <td><a href="https://www.premierleague.com/match/{{row.match_id}}">{{row.match_id}}</a></td> </tr>
                 {% endfor %}
             </table>
         </div>
@@ -72,5 +72,5 @@
     </body>
 
 </html>
- -->
+
 
