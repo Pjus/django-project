@@ -17,3 +17,13 @@
 [0722/175058.622:ERROR:exception_snapshot_win.cc(98)] thread ID 16360 not found in process
 [0722/175059.332:ERROR:process_reader_win.cc(123)] NtOpenThread: {액세스 거부} 프로세스가 개체에 액세스를 요구했지만 액세스 권한이 없습니다. (0xc0000022)
 [0722/175059.332:ERROR:exception_snapshot_win.cc(98)] thread ID 8400 not found in process
+[0724/112741.915:ERROR:process_reader_win.cc(151)] SuspendThread: 액세스가 거부되었습니다. (0x5)
+[0724/112741.922:ERROR:process_reader_win.cc(151)] SuspendThread: 액세스가 거부되었습니다. (0x5)
+[0724/112741.944:ERROR:exception_snapshot_win.cc(98)] thread ID 17072 not found in process
+[0724/112741.944:ERROR:process_reader_win.cc(123)] NtOpenThread: 잘못된 클라이언트 ID가 지정되었습니다. (0xc000000b)
+[0724/112741.945:ERROR:exception_snapshot_win.cc(98)] thread ID 15884 not found in process
+[0724/112742.018:ERROR:process_reader_win.cc(123)] NtOpenThread: {액세스 거부} 프로세스가 개체에 액세스를 요구했지만 액세스 권한이 없습니다. (0xc0000022)
+[0724/112742.018:ERROR:exception_snapshot_win.cc(98)] thread ID 5596 not found in process
+[0724/112742.018:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 기존 프로세스에 액세스하려고 했습니다. (0xc000010a)
+[0724/112742.060:ERROR:process_reader_win.cc(151)] SuspendThread: 액세스가 거부되었습니다. (0x5)
+[0724/112742.062:ERROR:exception_snapshot_win.cc(98)] thread ID 11848 not found in process
